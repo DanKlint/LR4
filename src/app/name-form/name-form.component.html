@@ -1,0 +1,6 @@
+<div>
+	<input type="text" [(ngModel)]="userName" placeholder="Ваше имя.." />
+	<button (click)="submitName()">Отправить</button>
+
+	<p *ngIf="errorMessage" style="color: red;">{{ errorMessage }}</p>
+</div>

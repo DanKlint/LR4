@@ -1,0 +1,8 @@
+<div>
+	<h2>Добро пожаловать!</h2>
+	<p>Как я могу к Вам обращаться?</p>
+	<button (click)="getRandomName()">Зови как хочешь</button>
+	<app-name-form [userName]="userName" (nameSubmitted)="onNameSubmitted($event)"></app-name-form>
+
+	<p *ngIf="greeting">{{ greeting }}</p>
+</div>

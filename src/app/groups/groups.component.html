@@ -1,0 +1,8 @@
+<div class="group-info">
+	<ng-container *ngIf="groupId !== null; else notFound">
+		<h1>Группа №{{ groupId }}</h1>
+	</ng-container>
+	<ng-template #notFound>
+		<h1>Группа не найдена</h1>
+	</ng-template>
+</div>
